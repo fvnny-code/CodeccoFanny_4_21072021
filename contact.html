@@ -6,59 +6,49 @@
     <!-- <meta name="keywords" content=""> -->
     <!-- la balise <meta name="keywords est oboslète." -->
 
-    <meta name="description" content="La chouette agence, entreprise de webdesign basée à Lyon. Design, SEO, stratégie marketing ou identité visuelle, nous assurons la transition numérique de votre entreprise afin de rendre votre vitrine digitale plus attractive et visible sur internet."/>
+    <meta name="description" content="La chouette agence, entreprise de webdesign basée à Lyon.Contactez-nous à l'aide du formulaire ci-dessous."/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
-
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <!-- scripts en fin de page -->
+ 
 	<!-- Titre contenant mot-clé -->
     <title>La Chouette agence - Entreprise de webdesign, Lyon - Contact</title>
 
     <!-- Analytics -->
 
     <!-- Analytics END -->
+     <!-- scripts en fin de page -->
   </head>
   <body>
     <!-- Principal conteneur -->
     <div class="page-container">
       <!-- bloc-0 -->
-      <div class="bloc bgc-white l-bloc" id="bloc-0">
+      <div id="bloc-0" class="bloc bgc-white l-bloc" >
         <div class="container bloc-sm">
           <nav class="navbar row">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"
-                ><img
-                  src="img/la-chouette-agence.png"
-                  alt="atlanta web design logo"
-                  height="40"
-              /></a>
-              <button
-                id="nav-toggle"
-                type="button"
-                class="ui-navbar-toggle navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-1"
-              >
-                <span class="sr-only">Toggle navigation</span
-                ><span class="icon-bar"></span><span class="icon-bar"></span
-                ><span class="icon-bar"></span>
+              <a class="navbar-brand" href="accueil.html">
+                <img src="img/la-chouette-agence.png"
+                  alt="Logo de La Chouette agence"/>
+                </a>
+              <button id="nav-toggle" class="ui-navbar-toggle navbar-toggle" type="button"  data-toggle="collapse" data-target=".navbar-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
             </div>
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
               <ul class="site-navigation nav navbar-nav">
-                <li>
-                  <a href="index.html">Accueil</a>
-                </li>
-                <li></li>
-                <li>
-                  <a href="page2.html">page2 &gt;</a>
-                </li>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -67,17 +57,7 @@
       <!-- bloc-0 END -->
 
       <!-- bloc-6 -->
-      <div
-        class="
-          bloc
-          bg-dots-bg bg-repeat
-          bgc-atomic-tangerine
-          d-bloc
-          bloc-bg-texture
-          texture-paper
-        "
-        id="bloc-6"
-      >
+      <div id="bloc-6" class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper">
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12">
@@ -97,115 +77,96 @@
       <!-- bloc-6 END -->
 
       <!-- bloc-7 -->
-      <div class="bloc bgc-white l-bloc" id="bloc-7">
+      <div id="bloc-7" class="bloc bgc-white l-bloc" >
         <div class="container bloc-lg">
           <div class="row">
+            <div class="col-sm-12">
             <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-              >
+              <form id="form_1" method="post" action="includes/form_1.php" novalidate="">
                 <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
+                  <label for="name"> Nom </label>
+                  <input id="name" class="form-control" name="name" type="text"required />
                 </div>
                 <div class="form-group">
-                  <label> Adresse email </label>
-                  <input
-                    id="email"
-                    class="form-control"
-                    type="email"
-                    required
-                  />
+                  <label for="email"> Adresse email </label>
+                  <input id="email" class="form-control" name="email" type="email" required="" autofocus="" aria-invalid="false"/>
                 </div>
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    required
-                    id="input_504"
-                  />
+                  <label for="info" name="info">Comment nous avez-vous connu ?</label>
+                  <select id="info" name="info">
+                    <option value="recommandation">Par recommandation</option>
+                    <option value="nav-web">Recherche sur internet</option>
+                    <option value="social-media">Via les réseaux sociaux</option>
+                  </select>
                 </div>
                 <div class="form-group">
-                  <label>
-                    Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br /> </label
-                  ><textarea
-                    id="message"
-                    class="form-control"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
+                  <label for="message"> 
+                    Brief de votre projet (Ajoutez autant de détails que nécessaire)
+                    <br>
+                  </label>
+                  <textarea id="message" class="form-control" name="message" rows="4" cols="50"required=""></textarea>
                 </div>
-                <button
-                  class="
-                    bloc-button
-                    btn btn-lg btn-block
-                    cta-hero
-                    btn-atomic-tangerine
-                  "
-                  type="submit"
-                >
-                  Envoyer
-                </button>
+                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
               </form>
             </div>
             <div class="col-sm-6">
-              <p>
-                contact@lachouetteagence.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
-                de 9h à 18h, du lundi au vendredi<br />
+              <!-- fiche contact et accès -->
+              <p class="link">
+                <a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
               </p>
+                <a href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">
+                  2 place Sathonay 69001 Lyon
+                </a>
+                
+              <p class="horaires">Ouvert de 9h à 18h, du lundi au vendredi</p>
             </div>
+          </div>
           </div>
         </div>
       </div>
       <!-- bloc-7 END -->
 
       <!-- ScrollToTop Button -->
-      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
-        ><span class="fa fa-chevron-up"></span
-      ></a>
+      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
+        <span class="fa fa-chevron-up"></span>
+      </a>
       <!-- ScrollToTop Button END-->
 
       <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <div id="bloc-8" class="bloc bgc-atomic-tangerine d-bloc">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
               <p class="text-center white">
-                La chouette agence - Agence web basée à Lyon.<br />
+                La chouette agence - Agence web basée à Lyon
               </p>
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-twitter icon-md"></span
-                    ></a>
+                    <a class="social" href="#">
+                      <span class="fa fa-twitter icon-md"></span>
+                    </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-facebook icon-md"></span
-                    ></a>
+                    <a class="social" href="#">
+                      <span class="fa fa-facebook icon-md"></span>
+                    </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-dribbble icon-md"></span
-                    ></a>
+                    <a class="social" href="#"><span class="fa fa-dribbble icon-md">
+                      </span>
+                    </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-instagram icon-md"></span
-                    ></a>
+                    <a class="social" href="#">
+                      <span class="fa fa-instagram icon-md"></span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -217,7 +178,7 @@
     </div>
     <!-- Principal conteneur END -->
 
-	<script src="./js/jquery-2.1.0.min.js"></script>
+	  <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/blocs.min.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
