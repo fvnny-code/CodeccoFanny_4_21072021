@@ -6,36 +6,36 @@
     <!-- <meta name="keywords" content=""> -->
     <!-- la balise <meta name="keywords est oboslète." -->
 
-    <meta
-      name="description"
-      content="La chouette agence, entreprise de webdesign basée à Lyon.Contactez-nous à l'aide du formulaire ci-dessous."
-    />
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="description" content="La chouette agence, entreprise de webdesign basée à Lyon.Contactez-nous à l'aide du formulaire ci-dessous."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
-
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="La chouette agence, entreprise de webdesign à Lyon"/>
-    <meta name="twitter:description" content="Contactez la chouette agence, entreprise de webdesign à Lyon"/>
-    <!-- Open Graph data -->
-    <meta property="og:title" content="La chouette agence, entreprise de webdesign à Lyon"/>
-    <meta property="og:description" content="Contactez la chouette agence, entreprise de webdesign à Lyon"/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="insert GitHub page url"/>
-    <meta property="og:image" content="https://raw.githubusercontent.com/fvnny-code/CodeccoFanny_4_21072021/main/img/la-chouette-agence.png"/>
+   <!-- Indexation moteurs de recherche -->
+   <meta name="robots" content="index, follow">
+
+   <!-- Twitter Cards data -->
+   <meta name="twitter:card" content="summary" />
+   <meta name="twitter:title" content="La chouette agence | Entreprise de webdesign à Lyon"/>
+   <meta name="twitter:description" content="Contactez la chouette agence, entreprise de webdesign à Lyon"/>
+   <meta name="twitter:image" content="https://raw.githubusercontent.com/fvnny-code/CodeccoFanny_4_21072021/main/img/la-chouette-agence.png">
+   <meta name="twitter:image:alt" content="Logo de La chouette agence.">
+   <meta name="twitter:site" content="@Lachouetteagence">
+   <!-- Twitter Cards END-->
+   <!-- Open Graph data -->
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="La chouette agence | Entreprise de webdesign à Lyon"/>
+   <meta property="og:description" content="Contactez la chouette agence, entreprise de webdesign à Lyon"/>
+   <meta property="og:url" content="insert GitHub page url"/>
+   <meta property="og:image" content="https://raw.githubusercontent.com/fvnny-code/CodeccoFanny_4_21072021/main/img/la-chouette-agence.png"/>
+  <!-- Open Graph END -->
 
     <!-- Titre contenant mot-clé -->
-    <title>La Chouette agence - Entreprise de webdesign, Lyon - Contact</title>
+    <title>Contact - La Chouette agence - Entreprise de webdesign, Lyon</title>
 
     <!-- Analytics -->
     <!-- afin d'assurer le suivi d'audience et de performance du site, 
@@ -43,6 +43,7 @@
     <!-- Analytics END -->
     <!-- scripts en fin de page -->
   </head>
+  
   <body>
     <!-- Principal conteneur -->
     <div class="page-container">
@@ -52,18 +53,9 @@
           <nav class="navbar row">
             <div class="navbar-header">
               <a class="navbar-brand" href="accueil.html">
-                <img
-                  src="img/la-chouette-agence.png"
-                  alt="Logo de La Chouette agence"
-                />
+                <img src="img/la-chouette-agence.png" alt="Logo de La Chouette agence"/>
               </a>
-              <button
-                id="nav-toggle"
-                class="ui-navbar-toggle navbar-toggle"
-                type="button"
-                data-toggle="collapse"
-                data-target=".navbar-1"
-              >
+              <button id="nav-toggle" class="ui-navbar-toggle navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -82,25 +74,16 @@
       <!-- bloc-0 END -->
 
       <!-- bloc-6 -->
-      <div
-        id="bloc-6"
-        class="
-          bloc
-          bg-dots-bg bg-repeat
-          bgc-atomic-tangerine
-          d-bloc
-          bloc-bg-texture
-          texture-paper
-        "
-      >
+      <div id="bloc-6" class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper">
+        <!-- modifier les contrastes -->
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12">
-              <!-- rendre le texte visible : modifier les couleurs -->
-              <h1 class="text-center hero-bloc-text tc-white">
+              <!-- rendre le texte visible : modifier les couleurs  retrait de la class="tc-white"-->
+              <h1 class="text-center hero-bloc-text">
                 Parlons web design !
               </h1>
-              <p class="text-center mg-lg tc-white tight-width-whitespace">
+              <p class="text-center mg-lg tight-width-whitespace">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
                 Parlez-nous de votre projet en complétant le formulaire
@@ -118,87 +101,38 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="col-sm-6">
-                <form
-                  id="form_1"
-                  method="post"
-                  action="includes/form_1.php"
-                  novalidate=""
-                >
+                <form id="form_1" method="post" action="includes/form_1.php" novalidate>
                   <div class="form-group">
                     <label for="name"> Nom </label>
-                    <input
-                      id="name"
-                      class="form-control"
-                      name="name"
-                      type="text"
-                      required
-                    />
+                    <input id="name" class="form-control" name="name" type="text"/>
                   </div>
                   <div class="form-group">
                     <label for="email"> Adresse email </label>
-                    <input
-                      id="email"
-                      class="form-control"
-                      name="email"
-                      type="email"
-                      required=""
-                      autofocus=""
-                      aria-invalid="false"
-                    />
+                    <input id="email" class="form-control" name="email" type="email" required autofocus/>
                   </div>
                   <div class="form-group">
-                    <label for="info" name="info"
-                      >Comment nous avez-vous connu ?</label
-                    >
+                    <label for="info" name="info">Comment nous avez-vous connus ?</label>
                     <select id="info" name="info">
                       <option value="recommandation">Par recommandation</option>
-                      <option value="nav-web">Recherche sur internet</option>
-                      <option value="social-media">
-                        Via les réseaux sociaux
-                      </option>
+                      <option value="nav-web" selected >Recherche sur internet</option>
+                      <option value="social-media">Via les réseaux sociaux</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="message">
-                      Brief de votre projet (Ajoutez autant de détails que
-                      nécessaire)
-                      <br />
+                    <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
                     </label>
-                    <textarea
-                      id="message"
-                      class="form-control"
-                      name="message"
-                      rows="4"
-                      cols="50"
-                      required=""
-                    ></textarea>
+                    <textarea id="message" class="form-control" name="message" rows="4" cols="50" required> 
+                    </textarea>
                   </div>
-                  <button
-                    class="
-                      bloc-button
-                      btn btn-lg btn-block
-                      cta-hero
-                      btn-atomic-tangerine
-                    "
-                    type="submit"
-                  >
-                    Envoyer
-                  </button>
+                  <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
                 </form>
               </div>
               <div class="col-sm-6">
                 <!-- fiche contact et accès -->
                 <p class="link">
-                  <a href="mailto:contact@lachouetteagence.com"
-                    >contact@lachouetteagence.com</a
-                  >
+                  <a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
+                  <a href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">2 place Sathonay 69001 Lyon</a>
                 </p>
-                <a
-                  href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673"
-                >
-                  2 place Sathonay 69001 Lyon
-                </a>
-
                 <p class="horaires">Ouvert de 9h à 18h, du lundi au vendredi</p>
               </div>
             </div>
@@ -208,10 +142,7 @@
       <!-- bloc-7 END -->
 
       <!-- ScrollToTop Button -->
-      <a
-        class="bloc-button btn btn-d scrollToTop"
-        onclick="scrollToTarget('1')"
-      >
+      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
         <span class="fa fa-chevron-up"></span>
       </a>
       <!-- ScrollToTop Button END-->
@@ -224,19 +155,17 @@
               <p class="text-center white">
                 La chouette agence - Agence web basée à Lyon
               </p>
+              <!-- liens réseaux sociaux
+                  Les rendre visibles     -->
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="#">
-                      <span class="fa fa-twitter icon-md"></span>
-                    </a>
+                    <a class="social" href="#"><span class="fa fa-twitter icon-md"></span></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="#">
-                      <span class="fa fa-facebook icon-md"></span>
-                    </a>
+                    <a class="social" href="#"><span class="fa fa-facebook icon-md"></span></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
@@ -248,9 +177,7 @@
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="#">
-                      <span class="fa fa-instagram icon-md"></span>
-                    </a>
+                    <a class="social" href="#"><span class="fa fa-instagram icon-md"></span></a>
                   </div>
                 </div>
               </div>
