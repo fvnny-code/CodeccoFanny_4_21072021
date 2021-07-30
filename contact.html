@@ -43,7 +43,7 @@
     <!-- Analytics END -->
     <!-- scripts en fin de page -->
   </head>
-  
+
   <body>
     <!-- Principal conteneur -->
     <div class="page-container">
@@ -52,9 +52,10 @@
         <div class="container bloc-sm">
           <nav class="navbar row">
             <div class="navbar-header">
-              <a class="navbar-brand" href="accueil.html">
+              <a class="navbar-brand" href="accueil.html" title="Retour à la page d'accueil">
                 <img src="img/la-chouette-agence.png" alt="Logo de La Chouette agence"/>
               </a>
+              <!-- redimensionner l'image et écrire "La Chouette agence dans un <p>" -->
               <button id="nav-toggle" class="ui-navbar-toggle navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -64,8 +65,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
               <ul class="site-navigation nav navbar-nav">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="accueil.html" title="Accueil">Accueil</a></li>
+                <li><a href="accueil.html#bloc-2-services" title="Nos services">Nos services</a></li>
+                <li><a href="accueil.html#bloc-4-portfolio" title="Porfolio">Portfolio</a></li>
               </ul>
             </div>
           </nav>
