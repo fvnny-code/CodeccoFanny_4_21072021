@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +9,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 a,
 button {
@@ -340,6 +345,7 @@ a:hover {
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+    /* display: none; */
 }
 
 .navbar-toggle:hover {
@@ -707,6 +713,7 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    /* position: relative; */
 }
 
 h3 {
@@ -777,14 +784,17 @@ h4 {
 .tc-white {
     color: #F3976C!important;
 }
+/* faire une classe sur le modèle de .tc-white avec une autre couleur ? */
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+/* Changer la couleur pour augmenter les contrastes ? */
+    background: rgb(243, 151, 108);
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+/* Changer la couleur pour augmenter les contrastes ? */
+    background: rgb(194, 120, 86)!important;
     color: #FFFFFF!important;
 }
 
@@ -822,6 +832,7 @@ h4 {
 }
 
 .bg-presentation {
+    /* convertir l'image en .png */
     background-image: url("img/image-de-presentation.bmp");
 }
 
@@ -848,13 +859,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,21 +883,21 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /* .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
-    .bloc-fill-screen .fill-bloc-top-edge,
+    /* .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
 }
 
 @media (max-width: 767px) {
