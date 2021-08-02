@@ -722,7 +722,7 @@ p, quote {
 }
 
 #bloc-6 p{
-    margin: 40px 0;
+    margin: auto;
     font-size: 19px;
     /* text-transform: uppercase; */
     line-height: 30px;
@@ -735,6 +735,7 @@ text-align: left;
 label{
     font-size: 16px;
 }
+
 select{
    font-size: 16px;
 }
