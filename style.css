@@ -726,8 +726,8 @@ p, quote {
     font-size: 19px;
     /* text-transform: uppercase; */
     line-height: 30px;
-
 }
+
 #bloc-7 .container{
 text-align: left;
 }
@@ -737,7 +737,6 @@ label{
 }
 select{
    font-size: 16px;
-   margin: .4em;
 }
 .link, .horaires {
     padding-top: 30px;
