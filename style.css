@@ -748,10 +748,14 @@ select{
  font-size: 24px;
  
 }
-
+#bloc-8 p{
+    font-size: 18px;
+    font-weight: 700;
+}
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
+    font-weight: 900;
 }
 
 h2 {
