@@ -102,6 +102,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    opacity: 0.5;
 }
 
 .b-parallax {
@@ -282,8 +283,8 @@ a:hover {
 }
 
 .row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -295,6 +296,10 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 32px;
+}
+/* redimensionnement du logo */
+#bloc-1-hero img{
+    max-width: 100px;
 }
 
 .navbar {
@@ -527,7 +532,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
     scroll-behavior: smooth;
@@ -716,6 +721,8 @@ p, quote {
     font-weight: 700;
 }
 
+
+
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
@@ -771,7 +778,9 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    /* changement background-color pour plus de contraste */
+    border-radius: 10px;
+    background-color: rgba(53, 51, 47, 0.61);
     padding: 40px 40px 40px 40px;
 }
 
@@ -799,7 +808,7 @@ h4 {
 
 .btn-atomic-tangerine {
 /* Changer la couleur pour augmenter les contrastes ? */
-    background: rgb(243, 151, 108);
+    background: rgb(238, 89, 20);
     color: #FFFFFF!important;
 }
 
@@ -840,6 +849,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    opacity: 0.75;
 }
 
 .bg-presentation {
@@ -915,6 +925,7 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    
     }
     h1,
     h2,
@@ -1006,8 +1017,8 @@ h4 {
     }
     .bloc-sm,
     .bloc-md {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .bloc-tile-2 .container,
     .bloc-tile-3 .container,
