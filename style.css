@@ -589,6 +589,9 @@ a[data-lightbox]:hover img {
     position: absolute;
     left: 15px;
     right: 15px;
+    /* modification : centrage texte */
+    text-align: center;
+    
     bottom: 5px;
 }
 
@@ -662,6 +665,8 @@ a {
 
 .container {
     max-width: 1000px;
+    /* modification centrage texte */
+    text-align: center;
 }
 
 .hero-bloc-text {
@@ -782,7 +787,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #fff!important;
 }
 /* faire une classe sur le modèle de .tc-white avec une autre couleur ? */
 
