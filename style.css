@@ -738,6 +738,8 @@ label{
 
 select{
    font-size: 16px;
+   max-width: 100%;
+   text-overflow: ellipsis;
 }
 .link, .horaires {
     padding-top: 30px;
