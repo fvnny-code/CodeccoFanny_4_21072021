@@ -828,7 +828,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: rgba(243, 165, 129, 0.708);
 }
 
 .tc-white {
@@ -838,13 +838,13 @@ h4 {
 
 .btn-atomic-tangerine {
 /* Changer la couleur pour augmenter les contrastes ? */
-    background: rgb(238, 89, 20);
-    color: #FFFFFF!important;
+    background: rgb(243, 165, 129);
+    color: #333!important;
 }
 
 .btn-atomic-tangerine:hover {
 /* Changer la couleur pour augmenter les contrastes ? */
-    background: rgb(194, 120, 86)!important;
+    background: rgb(240, 113, 54)!important;
     color: #FFFFFF!important;
 }
 
