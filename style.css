@@ -924,7 +924,7 @@ h4 {
 
 @media (max-width: 991px) {
     .container {
-        width: 100%;
+        width: 80%;
     }
     .b-parallax {
         background-attachment: scroll;
