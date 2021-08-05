@@ -741,7 +741,7 @@ select{
    max-width: 100%;
    text-overflow: ellipsis;
 }
-.link, .horaires {
+.link, .horaires{
     padding-top: 30px;
     font-size: 19px;
     text-align: center;
@@ -750,6 +750,7 @@ select{
  font-size: 24px;
  
 }
+
 #bloc-8 p{
     font-size: 18px;
     font-weight: 700;
