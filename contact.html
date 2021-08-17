@@ -6,7 +6,7 @@
     <!-- <meta name="keywords" content=""> -->
     <!-- la balise <meta name="keywords est oboslète." -->
 
-    <meta name="description" content="La chouette agence, entreprise de webdesign basée à Lyon.Contactez-nous à l'aide du formulaire ci-dessous."/>
+    <meta name="description" content="La chouette agence, entreprise de web design basée à Lyon.Contactez-nous à l'aide du formulaire ci-dessous."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
@@ -60,12 +60,12 @@
       <!-- bloc-0 -->
       <header id="bloc-0" class="bloc bgc-white l-bloc">
         <div class="container bloc-sm">
-          <nav class="navbar row">
+          <nav aria-label="menu" class="navbar row">
             <div class="navbar-header">
               <a class="navbar-brand" href="index.html" title="Retour à la page d'accueil">
                 <img src="img/Logo-la-chouette-agence.png" alt="Logo de La Chouette agence" height="40"/>
               </a>
-              <button id="nav-toggle" class="ui-navbar-toggle navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-1">
+              <button aria-controls="nav-toggle" id="nav-toggle" class="ui-navbar-toggle navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -111,18 +111,18 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="col-sm-6">
-                <form id="form_1" method="post" success-msg="Votre message a été envoyé." fail-msg="Désolé, il semble notre serveur de messagerie ne répond pas.">
+                <form aria-label="formulaire" id="form_1" method="post" success-msg="Votre message a été envoyé." fail-msg="Désolé, il semble notre serveur de messagerie ne répond pas.">
                   <div class="form-group">
                     <label for="name"> Nom </label>
-                    <input id="name" class="form-control" name="name" type="text"/>
+                    <input id="name" class="form-control" name="name" type="text" aria-label="renseignez votre nom ici"/>
                   </div>
                   <div class="form-group">
                     <label for="email"> Adresse email </label>
-                    <input id="email" class="form-control" name="email" type="email" placeholder="exemple@exemple.com" required/>
+                    <input id="email" class="form-control" name="email" type="email" placeholder="exemple@exemple.com" aria-label="renseignez votre email ici" required/>
                   </div>
                   <div class="form-group">
                     <label for="choice-info">Comment nous avez-vous connus ?</label>
-                    <select id="choice-info" name="info">
+                    <select id="choice-info" name="info" aria-label="sélectionnez parmi les options ci-après">
                       <option value="">--Veuillez choisir parmi les réponses ci-après--</option>
                       <option value="recommandation">Bouche à oreille</option>
                       <option value="web">Internet</option>
@@ -133,19 +133,19 @@
                   <div class="form-group">
                     <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
                     </label>
-                    <textarea id="message" class="form-control" name="message" rows="4" cols="50" required> 
+                    <textarea aria-label="renseignez les détail de votre projet" id="message" class="form-control" name="message" rows="4" cols="50" required> 
                     </textarea>
                   </div>
-                  <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
+                  <button aria-label="envoi du formulaire" class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
                 </form>
               </div>
               <div class="col-sm-6">
                 <!-- fiche contact et accès -->
                 <p class="link">
-                  <a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
+                  <a aria-label="lien d'envoi de mail" href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
                   </p>
                   <p class="link">
-                    <a href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673" rel="noopener noreferrer" target="-blank">2 place Sathonay 69001 Lyon</a>    
+                    <a aria-label="lien google maps" href="https://www.google.com/maps/place/2+Place+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673" rel="noopener noreferrer" target="-blank">2 place Sathonay 69001 Lyon</a>    
                 </p>
                 <p class="horaires">Ouvert de 9h à 18h, du lundi au vendredi</p>
                 
@@ -174,24 +174,24 @@
               <div class="row row-no-gutters social">
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-twitter icon-md tc-white"></span></a>
+                    <a aria-label="twitter" class="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-twitter icon-md tc-white"></span></a>
                   </div>
                 </div>
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.facebook.com/" rel="noopener noreferrer"
+                    <a aria-label="facebook" class="social" href="https://www.facebook.com/" rel="noopener noreferrer"
                     target="_blank" ><span class="fa fa-facebook icon-md tc-white"></span></a>
                   </div>
                 </div>
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://dribbble.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-dribbble icon-md tc-white"></span>
+                    <a aria-label="dribbble" class="social" href="https://dribbble.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-dribbble icon-md tc-white"></span>
                     </a>
                   </div>
                 </div>
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" ><span class="fa fa-instagram icon-md tc-white"></span></a>
+                    <a aria-label="instagram" class="social" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank" ><span class="fa fa-instagram icon-md tc-white"></span></a>
                   </div>
                 </div>
               </div>

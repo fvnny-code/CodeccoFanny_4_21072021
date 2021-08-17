@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <!-- la balise keywords n'est pas utile, et le keyword stuffing est une pratique Black Hat. 
 	A bannir, donc.  -->
-    <!-- <meta name="description" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design"> -->
+    <!-- <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design"> -->
 
     <!-- Remplacer par une balise <meta name="description"> avec des mots clés pertinent et un champs sémantique élargi -->
 
-    <meta name="description" content="La chouette agence, entreprise de webdesign basée à Lyon. Design, SEO, stratégie marketing ou identité visuelle, nous assurons la transition numérique de votre entreprise afin de rendre votre vitrine digitale plus attractive et visible sur internet."/>
+    <meta name="description" content="La chouette agence, entreprise de web design basée à Lyon. Design, SEO, stratégie marketing ou identité visuelle, nous assurons la transition numérique de votre entreprise afin de rendre votre vitrine digitale plus attractive et visible sur internet."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
@@ -19,11 +19,12 @@
 
 	  <link rel="stylesheet" type="text/css" href="style.min.css" />
 
-    <!-- Indexation moteurs de recherche -->
+    <!-- Indexation moteurs de recherche, exemple. -->
     <meta name="robots" content="index, follow">
 
     <!-- Balise canonique -->
-    <link rel="canonical" href="#">
+    <!-- <link rel="canonical" href="#"> -->
+    <!-- Balise canonique END -->
 
     <!-- Twitter Cards data -->
     <meta name="twitter:card" content="summary" />
@@ -65,7 +66,7 @@
       <!-- bloc-0 -->
       <header id="bloc-0" class="bloc bgc-white l-bloc">
         <div class="container bloc-sm">
-          <nav class="navbar row">
+          <nav aria-label="menu" class="navbar row">
             <div class="navbar-header">
               <!-- <div class="keywords" style="color: #cccccc; font-size: 1px">
                 Agence web à paris, stratégie web, web design, illustrations,
@@ -79,7 +80,7 @@
                 Agence web à paris, stratégie web, web design, illustrations,
                 design de site web, site web, web, internet, site internet, site
               </div> -->
-                <button id="nav-toggle" class="ui-navbar-toggle navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-1">
+                <button aria-controls="nav-toggle" id="nav-toggle" class="ui-navbar-toggle navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-1">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -100,7 +101,7 @@
       <!-- bloc-0 END -->
 
       <!-- bloc-1-presentation -->
-      <div id="bloc-1-hero" class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" >
+      <div id="bloc-1-hero" class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax">
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace">
             <div class="col-sm-12">
@@ -108,7 +109,7 @@
               <h1 class="text-center hero-bloc-text tc-white">La chouette agence, 
               <br>votre entreprise de webdesign à Lyon</h1>
               <div class="text-center">
-                <a href="contact.html" id="cta-hero" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine">Contact</a>       
+                <a aria-label="lien vers la page de contact" href="contact.html" id="cta-hero" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine">Contact</a>       
               </div>
             </div>
           </div>
@@ -117,7 +118,7 @@
       <!-- bloc-1-presentation END -->
 
       <!-- bloc-2-services -->
-      <section id="bloc-2-services" class="bloc bgc-white l-bloc" >
+      <section aria-label="prestations" id="bloc-2-services" class="bloc bgc-white l-bloc" >
         <div class="container bloc-md">
           <div class="row">
               <h2>
@@ -179,7 +180,7 @@
       <!-- bloc-2-services END -->
 
       <!-- bloc-3-what-i-do -->
-      <section id="bloc-3-what-i-do" class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax">
+      <section aria-label="nos principes" id="bloc-3-what-i-do" class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax">
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace black-background">
             <div class="col-sm-12">
@@ -198,7 +199,7 @@
                 ensemble pour créer des sites beau et bien structurés, qui
                 seront facilement trouvable sur les moteurs de recherche.
                 <br/><br/>
-                <a class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a>
+                <a aria-label="lien vers la page de contact" class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a>
                 <br/>
               </p>
             </div>
@@ -208,7 +209,7 @@
       <!-- bloc-3-what-i-do END -->
 
       <!-- bloc-4-portfolio -->
-      <section id="bloc-4-portfolio" class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" >
+      <section aria-label="portfolio" id="bloc-4-portfolio" class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" >
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12 text-center">
@@ -287,7 +288,7 @@
               équipe !
             </h2>
             <div class="col-sm-12 text-center">
-              <a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+              <a aria-label="lien vers la page de contact" href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
             </div>
           </div>
         </div>
@@ -312,23 +313,23 @@
                  <!-- changement col-sm-3 en col-xs-3 pour conserver alignement horizontal sur formats mobile -->
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank"
+                    <a aria-label="twitter" class="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank"
                     ><span class="fa fa-twitter icon-md"></span></a>
                   </div>
                 </div>
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank" ><span class="fa fa-facebook icon-md"></span></a>
+                    <a aria-label="facebook" class="social" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank" ><span class="fa fa-facebook icon-md"></span></a>
                   </div>
                 </div>
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://dribbble.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-dribbble icon-md"></span></a>
+                    <a aria-label="dribbble" class="social" href="https://dribbble.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-dribbble icon-md"></span></a>
                   </div>
                 </div>
                 <div class="col-xs-3">
                   <div class="text-center">
-                    <a class="social" href="https://www.instagram.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-instagram icon-md"></span></a>
+                    <a aria-label="instagram" class="social" href="https://www.instagram.com" rel="noopener noreferrer" target="_blank" ><span class="fa fa-instagram icon-md"></span></a>
                   </div>
                 </div>
                 <!-- retrait des balise de keyword = black-hat ! -->
